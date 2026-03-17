@@ -1,0 +1,32 @@
+POST http://localhost:5231/CrearTarea
+Content-Type: application/json
+
+{
+    "Titulo": "a",
+    "Descripcion" : "ma",
+    "FCreacion" : "2026-03-15",
+    "FLimite" : "2026-03-21",
+    "Estado" : false
+}
+###
+GET http://localhost:5231/Tareas
+###
+GET http://localhost:5231/Tareas/false
+###
+GET http://localhost:5231/Tarea/1
+###
+PUT http://localhost:5231/Put/1
+Content-Type: application/json
+
+{
+    "Titulo": "e",
+    "Descripcion" : "ma",
+    "FCreacion" : "2026-03-15",
+    "FLimite" : "2026-03-21",
+    "Estado" : false
+}
+###
+PATCH http://localhost:5231/Patch/0/true
+###
+DELETE  http://localhost:5231/1
+

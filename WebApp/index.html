@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas ITLA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+        
+        <form id="todo-form">
+            <input type="text" id="todo-title" placeholder="Título (ej. Proyecto C#)" required>
+            <textarea id="todo-desc" placeholder="Descripción de la tarea"></textarea>
+            
+            <div class="date-container">
+                <div class="date-field">
+                    <label>F. Creación</label>
+                    <input type="date" id="todo-fcreacion" required>
+                </div>
+                <div class="date-field">
+                    <label>F. Límite</label>
+                    <input type="date" id="todo-flimite" required>
+                </div>
+            </div>
+            
+            <button type="submit" id="save-btn">Crear Tarea</button>
+        </form>
+
+        <div class="filter-section">
+            <label>Filtrar por estado:</label>
+            <select id="status-filter">
+                <option value="all">Todas</option>
+                <option value="true">Completadas (True)</option>
+                <option value="false">Pendientes (False)</option>
+            </select>
+        </div>
+
+        <ul id="todo-list"></ul>
+    </div>
+    <div id="edit-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <h2>Editar Tarea</h2>
+        <form id="edit-form">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-title" required>
+            <textarea id="edit-desc"></textarea>
+            <label>Fecha Límite:</label>
+            <input type="date" id="edit-flimite" required>
+            <label>
+                <input type="checkbox" id="edit-estado"> Completada
+            </label>
+            <div class="modal-actions">
+                <button type="submit" class="save-btn">Guardar Cambios</button>
+                <button type="button" onclick="closeEditModal()" class="cancel-btn">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

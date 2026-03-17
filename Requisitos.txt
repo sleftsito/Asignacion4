@@ -1,0 +1,36 @@
+Cosas para la API
+
+
+API:
+	POST /tasks:
+		Debe validar que el título no esté vacío.
+		Retornar código HTTP adecuado(201).
+	GET /tasks:
+		Debe permitir filtro opcional por estado:
+          		GET /tasks?status=completed
+	GET /tasks/{id}:
+		Debe retornar 404 si no existe.
+	PUT /tasks/{id}:
+		Permitir modificar título, descripción y fecha límite.
+		No permitir cambiar manualmente la fecha de creación.
+	PATCH /tasks/{id}/complete:
+		Cambiar estado a completada.
+		No permitir completar una tarea ya completada.
+	DELETE /tasks/{id}:
+		Retornar código adecuado si no existe.
+Persistencia:
+	Como guardar los datos
+	Un solo archivo llamado task.json
+
+Datos:
+	Id (único)(int)
+
+	Título(string)
+
+	Descripción(string)
+
+	Fecha de creación(DateOnly)
+
+	Fecha límite(DateOnly)
+
+	Estado (Pendiente / Completada)(enum o boolean)
