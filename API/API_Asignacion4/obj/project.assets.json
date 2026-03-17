@@ -8,26 +8,24 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\TRIC(sleftsito)\\.nuget\\packages\\": {}
+    "C:\\Users\\Precision 3561\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programacion\\P2\\API\\Asignacion4\\API\\API_Asignacion4\\API_Asignacion4.csproj",
+      "projectUniqueName": "C:\\Programacion\\P2\\Asignacion4\\Asignacion4\\API\\API_Asignacion4\\API_Asignacion4.csproj",
       "projectName": "API_Asignacion4",
-      "projectPath": "D:\\Programacion\\P2\\API\\Asignacion4\\API\\API_Asignacion4\\API_Asignacion4.csproj",
-      "packagesPath": "C:\\Users\\TRIC(sleftsito)\\.nuget\\packages\\",
-      "outputPath": "D:\\Programacion\\P2\\API\\Asignacion4\\API\\API_Asignacion4\\obj\\",
+      "projectPath": "C:\\Programacion\\P2\\Asignacion4\\Asignacion4\\API\\API_Asignacion4\\API_Asignacion4.csproj",
+      "packagesPath": "C:\\Users\\Precision 3561\\.nuget\\packages\\",
+      "outputPath": "C:\\Programacion\\P2\\Asignacion4\\Asignacion4\\API\\API_Asignacion4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TRIC(sleftsito)\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Precision 3561\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
